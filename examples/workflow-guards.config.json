@@ -1,0 +1,18 @@
+{
+  "nudgeAt": 300000,
+  "nudgeStep": 150000,
+  "blockedSearchRoots": ["~", "~/Documents", "~/AppData", "C:\\", "C:", "D:\\", "D:", "/"],
+  "release": {
+    "commandPattern": "\\bgh\\s+release\\s+create\\b|\\bnpm\\s+publish\\b",
+    "askedPattern": "\\b(release|ship|publish|go live|deploy)\\b",
+    "notYetPattern": "\\b(don'?t|do not|not yet|no|hold|wait)\\b[^.!?\\n]{0,30}\\b(release|ship|publish|deploy)",
+    "folderChecks": [
+      {
+        "commandPattern": "deploy-my-plugin\\.ps1[^\\n]*-Release",
+        "mainFile": "my-plugin.php",
+        "mustContain": "Plugin Name:\\s*My Plugin"
+      }
+    ]
+  },
+  "inboxRoot": "~/Documents/plugin-inbox"
+}

@@ -1,0 +1,12 @@
+{
+  "_about": "One entry per project. Create <slug>/new, done, rejected and needs-you next to this file.",
+  "plugins": [
+    {
+      "slug": "my-plugin",
+      "name": "My Plugin",
+      "workspaces": ["~/code/my-plugin"],
+      "mcp_prefixes": ["my-plugin-"],
+      "rules": "~/code/my-plugin/CLAUDE.md"
+    }
+  ]
+}
